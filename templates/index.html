@@ -50,14 +50,19 @@
             let title = articles[i]["title"];
             let content = articles[i]["content"];
             let file = articles[i]["file"];
-
             let time = articles[i]["time"] || "????.???.??";
             let profile = articles[i]["profile"];
 
             let temp_html =`
              <div class="col-4">
               <div class="card">
-                <imgsrc="../${file}"class="card-img-top"alt="..."/>
+                <img 
+                  src="../${file}"
+                  class="card-img-top"
+                  alt="..."
+                />
+
+                
               <div class="card-body">
                 <img src="../${profile}"class="card-img-top"alt="... "id="imageprofile"/>
                 <h5 class="card-title">${title}</h5>
